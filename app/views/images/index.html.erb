@@ -1,3 +1,13 @@
 <div class="maincontainer">
-
+	<table class="picturecontent">
+		<% @images.each_slice(5) do |row| %>
+			<tr>
+				<% row.each do |img| %>
+					<td>
+						<%= image_tag(img.image.url) %>
+					</td>
+				<% end %>
+			</tr>
+		<% end %>
+	</table>
 </div>

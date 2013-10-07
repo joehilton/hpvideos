@@ -1,0 +1,15 @@
+<div class="controlbuttons">
+	<div class="signupbutton">
+		<% if user_signed_in? %>
+			Signed in as <%= current_user.email %>. Not you?
+			<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+		<% else %>
+			<%= link_to "Sign Up", "#sign_up", :rel => "leanModal" %>
+			<%= link_to "Sign In", "#sign_in", :rel => "leanModal" %>
+		<% end %>
+	</div>
+</div>
+<div class="modal" id="button.png"></div>
+	<div class="uploadbutton">
+		<%= link_to image_tag("button.png"), "#button", :rel => "leanModal" %>
+	</div>

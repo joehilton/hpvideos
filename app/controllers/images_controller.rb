@@ -18,6 +18,11 @@ class ImagesController < ApplicationController
 	def show
 		@image = Image.find(params[:id])
 	end
+	
+	def destroy
+		@image = Image.find(params[:id]).destroy
+		redirect_to root_path
+	end
 
 	private
 	def upload_params

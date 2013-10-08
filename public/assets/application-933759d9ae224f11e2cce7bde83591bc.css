@@ -1,0 +1,182 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("blackbackground.jpg");
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+         -o-background-size: cover;
+    background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------- Top Navigation Bar --------------*/
+.topnavbar{
+	display: block;
+	background-color: #000;
+	height: 100px;
+	color: #fff;
+	border-width: 5px;
+	text-align: center;
+}
+/*----------- Sub Navigation Bar --------------*/
+.subnav{
+	display: block;
+	background-color: #fff;
+	height: 25px;
+	text-align: center;
+}
+/*----------- Main Content Area -----------------*/
+.maincontainer{
+	width: 100%;
+	margin: auto;
+}
+.picturecontent{
+	max-width: 300px;
+	height: 200px;
+	margin: auto;
+}
+/*---------------- Signup/Login Buttons -------------*/
+.signupbutton{
+	display: inline-block;
+	width: 100px;
+	margin: auto;
+	background-color: #fff;
+	height: 20px;
+	border-radius: 5px 5px 5px 5px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
+.signupbutton span{
+	text-align: center;
+	padding-top: 5px;
+}
+.loginbutton{
+	display: inline-block;
+	width: 100px;
+	margin: auto;
+	background-color: #fff;
+	height: 20px;
+	border-radius: 5px 5px 5px 5px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
+.loginbutton span{
+	text-align: center;
+	padding-top: 5px;
+}
+.controlbuttons{
+	vertical-align: top;
+	display: inline-block;
+	margin: auto;
+	padding: 40px;
+}
+/*------------- Overlay ---------------*/
+#lean_overlay{
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+}
+#lean_overlay:hover { cursor: pointer; }
+
+.modal {
+	display: none;
+	width: 300px;
+	background: #9e6ba7;
+	font-size: 12px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px 5px 5px 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/*----------- Upload Button -------------*/
+.uploadbutton{
+	display: inline-block;
+	top: 20px;
+	left: 800px;
+	background-color: #fff;
+	margin: 20px;
+}
+
+/**** Base styles ****/
+
+nav#page-nav {
+  display: block;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+#container {
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  background: #D8D5D2;
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.box h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.box img {
+  display: block;
+  width: 100%;
+}
+
+.col1 { width: 80px; }
+.col2 { width: 180px; }
+.col3 { width: 280px; }
+.col4 { width: 380px; }
+.col5 { width: 480px; }
+
+.col1 img { max-width: 80px; }
+.col2 img { max-width: 180px; }
+.col3 img { max-width: 280px; }
+.col4 img { max-width: 380px; }
+.col5 img { max-width: 480px; }
+
+/**** Clearfix ****/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

@@ -1,13 +1,5 @@
-<div class="maincontainer">
-	<table class="picturecontent">
-		<% @images.each_slice(5) do |row| %>
-			<tr>
-				<% row.each do |img| %>
-					<td>
-						<%= image_tag(img.image.url) %>
-					</td>
-				<% end %>
-			</tr>
-		<% end %>
-	</table>
+<div class="maincontainer" id="masonry-container" class="clearfix">
+	<% @images.each do |i| %>
+		<div class="box col3"><%= image_tag (i.image.url(:medium)) %></div>
+	<% end %>
 </div>

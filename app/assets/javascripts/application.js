@@ -13,11 +13,21 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+//= require masonry/jquery.masonry
+//= require masonry/jquery.imagesloaded.min
 //= require turbolinks
 
 	//LeanModal
 	$(document).ready( function() {
 		$("a[rel*=leanModal]").leanModal({ top : 200, overlay : 0.8, closeButton: ".modal_close"});
 	}); 
+	
+	//Masonry
+	$(function() {
+        var $container = $('#masonry-container');
+        $container.imagesLoaded(function() {
+            $container.masonry();
+        });
+    });
+	

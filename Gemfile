@@ -57,5 +57,5 @@ end
   
 group :production do
 	#ImageMagick
-	#gem "rmagick", "~> 2.13.2"
+	 gem "rmagick", "~> 2.13.2"
 end

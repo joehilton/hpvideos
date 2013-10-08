@@ -10,14 +10,15 @@
  *
  *= require_self
  *= require_tree .
+ *= require 'masonry/basic'
  */
 body{
 	margin: 0;
 	padding: 0;
 	background-image: url("blackbackground.jpg");
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+	   -moz-background-size: cover;
+         -o-background-size: cover;
     background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -40,48 +41,14 @@ body{
 }
 /*----------- Main Content Area -----------------*/
 .maincontainer{
-	width: 85%;
+	width: 100%;
 	margin: auto;
 }
-table .picturecontent{
+.picturecontent{
 	max-width: 300px;
 	height: 200px;
+	margin: auto;
 }
-.picturecontent tr td{
-	width: 300px;
-	height: 200px;
-	vertical-align: top;
-}
-.picturecontent .container{
-	width: auto;
-	height: auto;
-	position: relatvie;
-	padding: 0px 0px 0px 0px;
-	margin: 20px 0 0 30px;
-	text-align: center;
-	border-style: solid #fff;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-			box-sizing: border-box;
-}
-.picturecontent .container img{
-	min-width: 250px;
-	max-width: 250px;
-	border-radius: 5px 5px 5px 5px;
-}
-.picturecontent .title{
-	padding: 10px 0;
-	display: block;
-	height: 10px;
-	background: #fff;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 13px;
-	margin: 0 0 10px 0;
-}
-
 /*---------------- Signup/Login Buttons -------------*/
 .signupbutton{
 	display: inline-block;
@@ -152,3 +119,4 @@ table .picturecontent{
 	background-color: #fff;
 	margin: 20px;
 }
+

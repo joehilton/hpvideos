@@ -4,8 +4,8 @@
 			Signed in as <%= current_user.email %>. Not you?
 			<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
 		<% else %>
-			<%= link_to "Sign Up", "#sign_up", :rel => "leanModal" %>
-			<%= link_to "Sign In", "#sign_in", :rel => "leanModal" %>
+			<%= link_to "Sign Up", "#sign_up", :rel => "leanModal", :class => "sign_up" %>
+			<%= link_to "Sign In", "#sign_in", :rel => "leanModal", :class => "sign_in" %>
 		<% end %>
 	</div>
 </div>

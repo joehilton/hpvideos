@@ -41,6 +41,10 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
+table .subbuttons tr td{
+	display: inline-block;
+	margin: 0px auto 0px auto;
+}
 /*---------------- Girls ------------------*/
 .subnav a.girls{
 	display: inline-block;
@@ -58,7 +62,37 @@ body{
 	color: #fff;
 }
 /*--------------- Pros -------------------*/
-
+.subnav a.pros{
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 0px 10px 0px 10px;
+	line-height: 30px;
+	font-weight: bold;
+	margin: 0px auto 0px auto;
+}
+.subnav a.pros:hover{
+	background: #fff;
+	color: #fff;
+}
+/*--------------- Videos --------------------*/
+.subnav a.videos{
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 0px 10px 0px 10px;
+	line-height: 30px;
+	font-weight: bold;
+	margin: 0px auto 0px auto;
+}
+.subnav a.videos:hover{
+	background: #fff;
+	color: #fff;
+}
 /*----------- Main Content Area -----------------*/
 .maincontainer{
 	width: 100%;

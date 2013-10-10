@@ -11,6 +11,11 @@ module ApplicationHelper
 	def devise_mapping
 		@devise_mapping ||= Devise.mappings[:user]
 	end
+	
+	#Categories
+	def categories
+		return Category.all
+	end
 
 
 end

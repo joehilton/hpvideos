@@ -1,11 +1,5 @@
 <div class="subnav">
-	<table class="subbuttons">
-		<tr>
-			<td>
-				<%= link_to "Girls", "#girls", :rel => "leanModal", :class => "girls" %>
-				<%= link_to "Pros", "#pros", :rel => "leanModal", :class => "pros" %>
-				<%= link_to "Videos", "#videos", :rel => "leanModal", :class => "videos" %>
-			</td>
-		</tr>
-	</table>
+	<% categories.each do |category| %>
+		<%= link_to category.name.humanize, "#{category.name}", :rel => "leanModal" %>
+	<% end %>
 </div>

@@ -1,5 +1,5 @@
 <div class="maincontainer" id="masonry-container" class="clearfix">
 	<% @images.each do |i| %>
-		<div class="box col3"><%= link_to image_tag(i.image.url(:medium), data: {"lightbox" => i.id}), image_path(i.id) %></div>
+		<div class="box col3"><%= link_to image_tag(i.image.url(:medium), data: {"lightbox" => i.id}), "#{i.image.url(:original)}", :rel => "shadowbox" %></div>
 	<% end %>
 </div>

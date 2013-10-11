@@ -66,11 +66,15 @@ table .subbuttons tr td{
 	width: 100%;
 	margin: 0px 10px 0px 10px;
 }
-.picturecontent{
-	max-width: 300px;
-	height: 200px;
-	margin: auto;
+.image_caption{
+	float: left;
+	position: absolute;
+	background: #000;
+	height: 100px;
+	width: 100px;
+	opacity: 0.8;
 }
+
 /*---------------- Login Button -------------*/
 .topnavbar a.sign_in{
 	display: inline-block;

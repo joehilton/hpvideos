@@ -90,27 +90,9 @@ table .subbuttons tr td{
 			box-sizing: border-box;
 }
 
-/*---------------- Login Button -------------*/
-.topnavbar a.sign_in{
+/*---------------- Top Nav Buttons -------------*/
+.topnavbar a{
 	display: inline-block;
-	float: left;
-	background-color: #ff895c;
-	color: #fff;
-	padding: 10px;
-	border-radius: 2px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 15px;
-	margin: 35px 0 0 0px;
-}
-.topnavbar a.sign_in:hover{
-	background: #000;
-	color: #fff;
-}
-/*-------------- Sign Up Button ----------*/
-.topnavbar a.sign_up{
-	display: inline-block;
-	float: left;
 	background-color: #ff895c;
 	color: #fff;
 	padding: 10px;
@@ -120,26 +102,15 @@ table .subbuttons tr td{
 	font-size: 15px;
 	margin: 35px 10px 0 10px;
 }
-.topnavbar a.sign_up:hover{
+.topnavbar a:hover{
 	background: #000;
 	color: #fff;
 }
-/*----------- Upload Button -------------*/
-.topnavbar a.upload_button{
-	display: inline-block;
-	float: right;
-	background-color: #ff895c;
-	color: #fff;
-	padding: 10px 10px;
-	border-radius: 5px;
-	text-decoration: none;
-	font-size: 15px;
-	margin: 35px;
-}
-.topnavbar a.upload_button:hover {
-	background: #000;
-	color: #fff;
-}
+.topnavbar a.sign_in		{ float: left; }
+.topnavbar a.sign_up		{ float: left; }
+.topnavbar a.sign_out	{ float: left; }
+.topnavbar a.upload		{ float: right; }
+
 
 /*------------- Overlay ---------------*/
 #lean_overlay{

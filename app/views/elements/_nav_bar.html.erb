@@ -1,12 +1,8 @@
-<div class="controlbuttons">
-	<div class="signupbutton">
-		<% if user_signed_in? %>
-			Signed in as <%= current_user.email %>. Not you?
-			<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
-		<% else %>
-			<%= link_to "Sign Up", "#sign_up", :rel => "leanModal", :class => "sign_up" %>
-			<%= link_to "Sign In", "#sign_in", :rel => "leanModal", :class => "sign_in" %>
-		<% end %>
-	</div>
-</div>
-<%= link_to "Upload", "#button", :rel => "leanModal", :class => "upload_button" %>
+	<% if user_signed_in? %>
+		Signed in as <%= current_user.email %>. Not you?
+		<%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "sign_out" %>
+	<% else %>
+		<%= link_to "Sign Up", "#sign_up", :rel => "leanModal", :class => "sign_up" %>
+		<%= link_to "Sign In", "#sign_in", :rel => "leanModal", :class => "sign_in" %>
+	<% end %>
+<%= link_to "Upload", "#button", :rel => "leanModal", :class => "upload" %>

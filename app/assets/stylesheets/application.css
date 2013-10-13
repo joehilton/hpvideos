@@ -80,11 +80,12 @@ table .subbuttons tr td{
 .item .caption {
 	position: absolute;
 	bottom: -30px; 
-	width: 100%;
+	width: 97%;
 	background: #000;
 	color: #fff;
 	opacity: 0;
 	padding: 10px;
+	margin: 0 6px 5px 0;
 	-webkit-box-sizing: border-box;
 	   -moz-boz-sizing: border-box;
 			box-sizing: border-box;

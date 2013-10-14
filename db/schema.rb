@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131010143622) do
+ActiveRecord::Schema.define(version: 20131014095919) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -33,6 +33,18 @@ ActiveRecord::Schema.define(version: 20131010143622) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "slugs", force: true do |t|
+    t.integer  "sluggable_id",                              null: false
+    t.string   "sluggable_type",                            null: false
+    t.boolean  "active",                     default: true, null: false
+    t.string   "slug",           limit: 126,                null: false
+    t.string   "scope",          limit: 126
+    t.datetime "created_at"
+  end
+
+  add_index "slugs", ["sluggable_type", "scope", "slug"], name: "slugs_unique", unique: true, using: :btree
+  add_index "slugs", ["sluggable_type", "sluggable_id", "active"], name: "slugs_for_record", using: :btree
 
   create_table "users", force: true do |t|
     t.datetime "created_at"

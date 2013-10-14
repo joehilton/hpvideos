@@ -61,3 +61,6 @@ group :production do
 	#ImageMagick
 	 gem "rmagick", "~> 2.13.2"
 end
+
+# Use Slugalicious 
+  gem "slugalicious", "~> 2.1.0"

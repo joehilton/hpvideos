@@ -72,7 +72,7 @@ table .subbuttons tr td{
 }
 
 .item {}
-.item:hover .caption { bottom: 0px; transition: opacity 0.2s ease, bottom 0.2s ease; opacity: 0.8; }
+.item:hover .caption { bottom: 0px; opacity: 0.8; }
 
 .item a { position: relative; overflow: hidden; display: block;}
 .item a .caption {
@@ -87,6 +87,7 @@ table .subbuttons tr td{
 	font-weight: bold;
 	text-align: center;
 	margin: 0;
+	transition: opacity 0.2s ease, bottom 0.2s ease;
 	-webkit-box-sizing: border-box;
 	   -moz-boz-sizing: border-box;
 			box-sizing: border-box;

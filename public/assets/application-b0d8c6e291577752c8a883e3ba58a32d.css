@@ -1,0 +1,274 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("blackbackground.jpg");
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+         -o-background-size: cover;
+    background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------- Top Navigation Bar --------------*/
+.topnavbar{
+	display: block;
+	background-color: #000;
+	height: 100px;
+	color: #fff;
+	border-width: 5px;
+	text-align: center;
+}
+/*----------- Sub Navigation Bar --------------*/
+.subnav{
+	display: block;
+	background-color: #fff;
+	height: 30px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+table .subbuttons tr td{
+	display: inline-block;
+	margin: 0px auto 0px auto;
+}
+/*---------------- Subnav Links ------------------*/
+.subnav a{
+	display: inline-block;
+	background-color: #ff895c;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 0px 20px 0px 20px;
+	line-height: 30px;
+	font-weight: bold;
+	margin: 0px auto 0px auto;
+	transition: color 0.2s ease;
+}
+.subnav a:hover{
+	color: #ff0;
+}
+/*----------- Main Content Area -----------------*/
+.maincontainer{
+	display: block;
+	margin: 0px auto 0px auto;
+}
+
+#fit-width .masonry {
+  margin: 0 auto;
+}
+
+.item {}
+.item:hover .caption { bottom: 0px; opacity: 0.8; }
+
+.item a { position: relative; overflow: hidden; display: block;}
+.item a .caption {
+	position: absolute;
+	bottom: -30px; 
+	width: 100%;
+	background: #000;
+	color: #fff;
+	opacity: 0;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	transition: opacity 0.2s ease, bottom 0.2s ease;
+	-webkit-box-sizing: border-box;
+	   -moz-boz-sizing: border-box;
+			box-sizing: border-box;
+}
+
+/*---------------- Top Nav Buttons -------------*/
+.topnavbar a{
+	display: inline-block;
+	background-color: #ff895c;
+	color: #fff;
+	padding: 10px;
+	border-radius: 2px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 35px 10px 0 10px;
+}
+.topnavbar a:hover{
+	background: #000;
+	color: #fff;
+}
+.topnavbar a.sign_in		{ float: left; }
+.topnavbar a.sign_up		{ float: left; }
+.topnavbar a.sign_out	{ float: left; }
+.topnavbar a.upload		{ float: right; }
+.topnavbar a.profile         { float: left; }
+.topnavbar a.home               { float: left; }
+
+
+/*------------- Overlay ---------------*/
+#lean_overlay{
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+}
+#lean_overlay:hover { cursor: pointer; }
+
+.modal {
+	display: none;
+	width: 300px;
+	background: #9e6ba7;
+	font-size: 12px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px 5px 5px 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/*------------ Profile Area ------------*/
+
+.profilecontainer{
+	width: 80%;
+	margin: 10px auto 0px auto;
+}
+.profilephoto{
+	display: inline-block;
+	margin: 10px;
+	width: 230px;
+	height: 230px;
+	background-color: #fff;
+	border-style: solid;
+	border-width: medium;
+	border-color: #bfcada;
+}
+.infocontainer{
+	display: inline-block;
+	width: 150px;
+	height: 230px;
+	margin: 10px;
+	background-color: #fff;
+}
+.profilepic a{
+	display: block;
+	background-color: #ff895c;
+	color: #fff;
+	padding: 10px;
+	border-radius: 2px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 35px 10px 0 10px;
+}
+.profilepic a:hover{
+	background: #000;
+	color: #fff;
+}
+.profilepic a.upload { float: left;}
+#sb-title-inner,#sb-info-inner,#sb-loading-inner,div.sb-message{font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;color:#fff;}
+#sb-container{position:fixed;margin:0;padding:0;top:0;left:0;z-index:999;text-align:left;visibility:hidden;display:none;}
+#sb-overlay{position:relative;height:100%;width:100%;}
+#sb-overlay:hover{cursor:pointer;}
+#sb-wrapper{position:absolute;visibility:hidden;width:100px;}
+#sb-wrapper-inner{position:relative;border:0px solid #303030;overflow:hidden;height:100px;}
+#sb-body{position:relative;height:100%;}
+#sb-body-inner{position:absolute;height:100%;width:100%;}
+#sb-player.html{height:100%;overflow:auto;}
+#sb-body img{border:none;}
+#sb-loading{position:relative;height:100%;}
+#sb-loading-inner{position:absolute;font-size:14px;line-height:24px;height:24px;top:50%;margin-top:-12px;width:100%;text-align:center;}
+#sb-loading-inner span{background:url(loading.gif) no-repeat;padding-left:34px;display:inline-block;}
+#sb-body,#sb-loading{/*background-color:#060606;*/}
+#sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden;}
+#sb-title,#sb-title-inner{height:26px;line-height:26px;}
+#sb-title-inner{font-size:16px;}
+#sb-info,#sb-info-inner{height:20px;line-height:20px;}
+#sb-info-inner{font-size:12px;}
+#sb-nav{float:right;height:16px;padding:2px 0;width:45%;}
+#sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat;}
+#sb-nav-close{background-image:url(close.png);}
+#sb-nav-next{background-image:url(next.png);}
+#sb-nav-previous{background-image:url(previous.png);}
+#sb-nav-play{background-image:url(play.png);}
+#sb-nav-pause{background-image:url(pause.png);}
+#sb-counter{float:left;width:45%;}
+#sb-counter a{padding:0 4px 0 0;text-decoration:none;cursor:pointer;color:#fff;}
+#sb-counter a.sb-counter-current{text-decoration:underline;}
+div.sb-message{font-size:12px;padding:10px;text-align:center;}
+div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
+/**** Base styles ****/
+
+nav#page-nav {
+  display: block;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+#container {
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  background: #D8D5D2;
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.box h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.box img {
+  display: block;
+  width: 100%;
+}
+
+.col1 { width: 80px; }
+.col2 { width: 180px; }
+.col3 { width: 280px; }
+.col4 { width: 380px; }
+.col5 { width: 480px; }
+
+.col1 img { max-width: 80px; }
+.col2 img { max-width: 180px; }
+.col3 img { max-width: 280px; }
+.col4 img { max-width: 380px; }
+.col5 img { max-width: 480px; }
+
+/**** Clearfix ****/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

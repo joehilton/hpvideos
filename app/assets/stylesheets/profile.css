@@ -1,6 +1,21 @@
 /*------------ Profile Area ------------*/
-.maincontainer{
-	width: 70%;
+.profilecontainer{
+	width: 80%;
 	margin: 10px auto 0px auto;
+}
+.profilephoto{
+	display: inline-block;
+	margin: 10px;
+	width: 230px;
+	height: 230px;
 	background-color: #fff;
+	border-style: solid;
+	border-width: medium;
+	border-color: #bfcada;
+}
+.infocontainer{
+	display: inline-block;
+	width: 150px;
+	height: 230px;
+	margin: 10px;
 }

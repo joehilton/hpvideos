@@ -1,7 +1,12 @@
 <div class="profilecontainer">
-	<div class="profilephoto"></div>
+	<div class="profilephoto">
+		<%= image_tag(@user.image.url(:small), :width => "230") if defined?(@user.image) %>
+	</div>
 	<div class="profilepic">
-		<%= link_to "Upload", "#button", :rel => "leanModal", :class => "upload" %>
+		<%= form_for @user do |f| %>
+			<%= f.file_field :image %>
+			<%= f.submit "go mofo" %>
+		<% end %>
 	</div>
 </div>
 

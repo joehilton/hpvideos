@@ -6,15 +6,16 @@ class UsersController < ApplicationController
 		@user = User.find(current_user.id)
 	end
 	
-	def new
+	def update
 	
+		if (!User.exists?(params[:id]))
+			@user = User.find_from_slug(params[:id])
+		else
+			@user = User.find(params[:id])		
+		end
+		
+		@user.update(params[:user].permit(:image))
+		redirect_to users_path
 	end
 	
-	def show 
-	
-	end
-	
-	def profile
-	
-	end
 end

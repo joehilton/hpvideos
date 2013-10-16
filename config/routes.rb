@@ -2,7 +2,7 @@ Hpvideos::Application.routes.draw do
 
 	devise_for :users
 	root to: "images#index"
-	resources :users
+	resources :users, :only => [:index, :update]
 
 	
 	resources :images

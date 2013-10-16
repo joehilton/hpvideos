@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
  devise :database_authenticatable, :registerable,
     :recoverable, :rememberable
 	
-	has_attached_file :image, :styles => {:small => "230x230>" }
+	has_attached_file :image, :styles => {:small => "x200>", :medium => "x300>", :large => "x400>"}
 	
 	#Slugalicious
 	include Slugalicious

@@ -6,5 +6,6 @@ Hpvideos::Application.routes.draw do
 
 	
 	resources :images
+	resources :videos
 
 end

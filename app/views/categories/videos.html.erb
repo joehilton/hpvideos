@@ -1,0 +1,12 @@
+<div class="maincontainer" id="masonry-container" class="clearfix">
+	<% @images.each do |i| %>
+		<div class="box col3 item">
+		<%= link_to "#{i.image.url(:original)}", :rel => "shadowbox" do %>
+			<%= image_tag(i.image.url(:medium), data: {"lightbox" => i.id}) %>
+			<% if defined?(i.title) && !i.title.blank? %>
+				<div class="caption"><%= i.title %></div>
+			<% end %>
+		<% end %>
+		</div>
+	<% end %>
+</div>

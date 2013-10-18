@@ -51,6 +51,9 @@ end
 # Use paperclip
   gem 'paperclip', '~> 3.5.1'
   
+# Use Paperclip-ffmpeg
+  gem 'paperclip-ffmpeg', '~> 1.0.0'
+  
 # Use JQuery Turbolinks
   gem "jquery-turbolinks", "~> 2.0.1"
   

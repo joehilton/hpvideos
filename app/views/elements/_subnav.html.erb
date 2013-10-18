@@ -1,5 +1,5 @@
 <div class="subnav">
 	<% categories.each do |category| %>
-		<%= link_to category.name.humanize, polymorphic_path(category.name.downcase) %>
+		<%= link_to category.name.humanize, category_path(category.id) %>
 	<% end %>
 </div>

@@ -1,5 +1,5 @@
 <div class="subnav">
 	<% categories.each do |category| %>
-		<%= link_to category.name.humanize, "#{category.name}", :rel => "leanModal" %>
+		<%= link_to category.name.humanize, polymorphic_path(category.name.downcase) %>
 	<% end %>
 </div>

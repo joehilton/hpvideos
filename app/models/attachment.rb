@@ -1,7 +1,7 @@
 class Attachment < ActiveRecord::Base
 
 	has_attached_file :attachment,
-		:styles =>  lambda { |a| 
+		styles:  lambda { |a| 
 			if ['image/jpeg', 'image/jpg', 'image/gif', 'image/png'].include? a.instance.attachment_content_type
 				{:small => "x200>", :medium => "x300>", :large => "x400>"}
 			else

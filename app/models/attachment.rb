@@ -7,8 +7,7 @@ class Attachment < ActiveRecord::Base
 			else
 				{}
 			end
-		}
-	validates_presence_of :attachment 
+		} 
 	
 	has_and_belongs_to_many :categories, :class_name => 'Category'
 	

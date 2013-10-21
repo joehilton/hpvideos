@@ -1,0 +1,15 @@
+<div class="maincontainer" id="masonry-container" class="clearfix">
+	<% @attachments.each do |i| %>
+		<div class="box col3 item">
+			<%= link_to "#{i.attachment.url(:original)}", :rel => "shadowbox" do %>
+				<%= image_tag(i.attachment.url(:medium), data: {"lightbox" => i.id}) %>
+				<% if defined?(i.title) && !i.title.blank? %>
+					<div class="caption"><%= i.title %></div>
+				<% end %>
+			<% end %>
+		</div>
+	<% end %>
+	<div class="box col3 item">
+		<%= video_tag("maru.mp4", controls: true, width: "100%") %>
+	</div>
+</div>

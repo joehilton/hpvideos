@@ -67,3 +67,6 @@ end
 
 # Use Slugalicious 
   gem "slugalicious", "~> 2.1.0"
+  
+# Use ffmpeg
+  gem "ffmpeg", "~> 0.2.5"

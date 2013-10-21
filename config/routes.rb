@@ -1,9 +1,9 @@
 Hpvideos::Application.routes.draw do
 
 	devise_for :users
-	root to: "images#index"
+	root to: "attachments#index"
 	resources :users, :only => [:index, :update]
 	resources :categories, :only => [:show]
-	resources :images
+	resources :attachments
 
 end

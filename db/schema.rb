@@ -11,25 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131016105802) do
+ActiveRecord::Schema.define(version: 20131021100510) do
 
-  create_table "categories", force: true do |t|
-    t.string   "name"
+  create_table "attachments", force: true do |t|
+    t.string   "title"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "categories_images", id: false, force: true do |t|
+  create_table "attachments_categories", id: false, force: true do |t|
     t.integer "category_id"
-    t.integer "image_id"
+    t.integer "attachment_id"
   end
 
-  create_table "images", force: true do |t|
-    t.string   "title"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
+  create_table "categories", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

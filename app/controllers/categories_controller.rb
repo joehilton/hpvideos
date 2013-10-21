@@ -1,8 +1,8 @@
 class CategoriesController < ApplicationController
 
 	def show
-		@images = Image.category(params[:id])
-		render 'images/index'
+		@attachments = Attachment.category(params[:id])
+		render 'attachments/index'
 	end
 
 end

@@ -1,0 +1,16 @@
+<%= form_for :attachment, :html => {:multipart => true}, :method => :post, url: attachments_path do |f| %>
+	<p>
+		<%= f.label :title %><br>
+		<%= f.text_field :title %>
+	</p>
+	
+	<p>
+		<%= f.label :attachment %><br>
+		<%= f.file_field :attachment %>
+		
+	</p>
+	
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

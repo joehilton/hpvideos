@@ -32,12 +32,12 @@
     });
 	
 	//ShadowBox Test
-	$(document).ready(function() {
+	/* $(document).ready(function() {
 		Shadowbox.init({
 			overlayOpacity: 0.8,
 			animate: false,
 			viewportPadding: 40
 		});
 	});
-
+ */
 	

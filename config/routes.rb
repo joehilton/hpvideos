@@ -5,5 +5,6 @@ Hpvideos::Application.routes.draw do
 	resources :users, :only => [:index, :update]
 	resources :categories, :only => [:show]
 	resources :attachments
+	resources :favourites 
 
 end

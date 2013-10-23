@@ -31,13 +31,12 @@
         });
     });
 	
-	//ShadowBox Test
-	/* $(document).ready(function() {
-		Shadowbox.init({
-			overlayOpacity: 0.8,
-			animate: false,
-			viewportPadding: 40
+	//Divbox
+	$(function() {
+		$('.divbox').divbox({
+			width: 300,
+			height: 300,
+			resize_large_image: true
 		});
 	});
- */
 	

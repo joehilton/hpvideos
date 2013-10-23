@@ -1,13 +1,14 @@
 <div class="maincontainer" id="masonry-container" class="clearfix">
 	<% @attachments.each do |i| %>
 		<div class="box col3 item">
-			<%= link_to "#{i.attachment.url(:original)}", :rel => "shadowbox" do %>
-				<%= image_tag(i.attachment.url(:medium), data: {"lightbox" => i.id}) %>
-				<% if defined?(i.title) && !i.title.blank? %>
-					<div class="caption"><%= i.title %></div>
+			<div class="favourites_button">Favourites
+			</div>
+				<%= link_to "#{i.attachment.url(:original)}", :rel => "shadowbox", :class => "divbox" do %>
+					<%= image_tag(i.attachment.url(:medium), data: {"lightbox" => i.id}) %>
+					<% if defined?(i.title) && !i.title.blank? %>
+						<div class="caption"><%= i.title %></div>
+					<% end %>
 				<% end %>
-			<% end %>
 		</div>
 	<% end %>
-
 </div>

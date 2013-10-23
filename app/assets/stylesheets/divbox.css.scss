@@ -1,0 +1,93 @@
+/* Init formats */
+#divbox a{
+	margin: 0;
+	padding:0;
+}
+#divbox{
+	background:  #000000 ;
+	opacity: .8;
+	filter:alpha(opacity=80);
+	margin: 0;
+	padding: 0;
+	
+}
+#divbox_data{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#divbox_ajax{
+	display: none; 
+	width: 400px;
+}
+
+
+/* Skin default */
+.divbox_default{ margin: 0; padding: 0;}
+
+.divbox_default{
+	background: #fff asset_url('div/loader.gif') no-repeat center center;
+	border: 10px solid #eee;
+	
+}
+.divbox_default.white{
+	background: none;
+	background-color: white;
+}
+
+.divbox_default .closed{
+	position: absolute;
+	z-index: 1006;
+	background:asset_url('divbox/close.png') no-repeat center center;
+	width: 24px;
+	height: 24px;
+	right: -20px;
+	top: -20px;
+	cursor: pointer;
+	
+}
+.divbox_default .prev,.divbox_default .next,.divbox_default .number{
+	position: absolute;
+	z-index: 1006;
+	width: 30px;
+	height: 24px;
+	cursor: pointer;
+	
+}
+.divbox_default .prev,.divbox_default .prevDisabled{
+	background:asset_url('divbox/left.png') no-repeat top center;
+	left: 0;
+}
+
+.divbox_default .prevDisabled{
+	background:asset_url('divbox/leftDisabled.png') no-repeat top center;
+}
+.divbox_default .next,.divbox_default .nextDisabled{
+	background: asset_url('divbox/right.png') no-repeat top right;
+	right: 2px;
+}
+.divbox_default .number{
+	right: 30px;
+	width: 20px;
+}
+.divbox_default .nextDisabled{
+	background:asset_url('divbox/rightDisabled.png') no-repeat top right;
+}
+
+
+.divbox_default .caption{
+	display: none;
+	background: #ccc;
+	opacity: .5;
+	filter:alpha(opacity=50);
+	color: #000;
+	padding-left: 30px;
+	padding-right: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	overflow: hidden;
+}
+.divbox_default .zoom{
+	cursor: asset_url('divbox/zoomin.cur'), default;
+}
